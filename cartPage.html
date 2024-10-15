@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cartPage.css" />
+    <link rel="icon" href="../images/shop-icon-32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header_class">
+        <div class="header_class1">
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <li class="shop_name">
+            <a href="file:///home/udaykiran/final-shop-project/index.html"
+              >SHOP</a
+            >
+          </li>
+          <li class="cart_logo">
+            <a href="file:///home/udaykiran/final-shop-project/cartPage.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </div>
+        <div class="header_class2">
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="file:///home/udaykiran/final-shop-project/allItems.html">Men's Outwear</a></li>
+            <li><a href="#">Women's Outwear</a></li>
+            <li><a href="#">Men's T-Shirt</a></li>
+            <li><a href="#">Women's T-shirt</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+        </div>
+      </header>
+      <div class="body_container">
+        <div class="inner_body_container">
+          <div class="header_container">
+            <h1>Your cart</h1>
+            <span>(1 item)</span>
+          </div>
+          <div class="cart_content">
+            <div class="img_content"></div>
+            <div class="matter_content">
+              <a href="#" id="title_content">Men's Tech Shell Zip-Up</a>
+              <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <p class="heading">Qty:</p>
+                    <p class="Quantity_tag">1</p>
+                    <i class="fa fa-caret-down" id="arrow_down1"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="size_tag">Size: M</a>
+              <a href="#" class="price_tag">$50.20</a>
+              <i class="fa-solid fa-xmark" id="x_mark"></i>
+            </div>
+          </div>
+          <div class="amount_content">
+            <span>Total:</span>
+            <span id="amountprice_tag">$50.20</span>
+            <button
+              onclick="window.location.href='file:///home/udaykiran/final-shop-project/checkOut.html'"
+              class="checkout_button"
+            >
+              CHECK OUT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
