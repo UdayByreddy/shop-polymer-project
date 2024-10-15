@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.body_container {
+    display: block; 
+    width: 100%;
+    padding: 1rem;
+}
+
+.header_class {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    padding: 20px 20px;
+    background-color: #ffffff;
+}
+
+.header_class1 {
+    display: flex;
+    justify-content: space-between; /* Center SHOP and move cart logo to the end */
+    align-items: center;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    font-size: 1.2rem; /* Set font size for header one */
+    padding-bottom: 3rem;
+}
+
+.header_class2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem; /* Set font size for header two */
+}
+
+.shop_name {
+  margin-left: 50%;
+  text-decoration: none;
+}
+.shop_name a {
+    text-decoration: none; 
+    color: #202020;
+    font-weight: 700;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+.cart_logo {
+  margin-left: auto;
+  color: #202020;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding-left: 2.5rem;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-stretch: extra-expanded;
+    font-family: "Roboto", sans-serif;
+    color: #202020;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #202020;
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.open-menu, .close-menu {
+    position: absolute;
+    color: #202020;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.open-menu {
+    left: 10px;
+}
+
+.close-menu {
+    top: 20px;
+    left: 20px;
+}
+
+#check {
+    display: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.men_outwear, .ladies_outwear {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+
+.mens_outwear_image, .ladies_outwear_image {
+    width: 80%;
+    height: 300px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mens_outwear_image {
+    background-image: url('./images/mens_outerwear.jpg');
+}
+
+.ladies_outwear_image {
+    background-image: url('./images/ladies_outerwear.jpg');
+}
+
+.men_outwear_content, .ladies_outwear_content {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.mens_outwear_heading, .ladies_outwear_heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+    font-stretch: extra-expanded;
+}
+
+.mens_outwear_button, .ladies_outwear_button {
+    padding: 0.5rem 2.2rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #202020;
+    cursor: pointer;
+}
+
+.T-shirt_outwear {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 0rem;
+}
+
+.men_Tshirt, .women_Tshirt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.men_Tshirt_image {
+    background-image: url('./images/mens_tshirts.jpg');
+    margin-left: auto;
+}
+
+.women_Tshirt_image {
+    background-image: url('./images/ladies_tshirts.jpg');
+    margin-right: auto;
+}
+
+.men_Tshirt_image, .women_Tshirt_image {
+    width: 80%;
+    height: 300px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+
+.men_Tshirt_content, .women_Tshirt_content {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.men_Tshirt_heading, .women_Tshirt_heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #202020;
+    font-stretch: extra-expanded;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.men_Tshirt_button, .women_Tshirt_button {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #202020;
+    cursor: pointer;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 0.4rem;
+  }
+  .footer-button {
+    border: none;
+    background-color: rgb(58, 52, 52);
+    color: #ffff;
+    padding: 0.7rem 1rem;
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container{
+        width: 100vw;
+        height: auto; 
+        overflow-x: hidden;  
+    }
+    .body_container{
+        width: 100%;
+        height: auto;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        background-color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+    .shop_name{
+        margin-left: 40%;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        color: #202020;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    .mens_outwear_image, .ladies_outwear_image {
+        height: 200px;
+        width: 100%;
+
+    }
+    .T-shirt_outwear {
+        align-items: center;
+        width: 100%;
+    }
+    
+    .men_Tshirt_image, .women_Tshirt_image {
+        width: 100%; 
+        height: 150px; 
+    }
+    
+    .men_Tshirt, .women_Tshirt {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    /* Ensure text stays outside the image */
+    .men_Tshirt_heading, .women_Tshirt_heading {
+        margin-top: 0.5rem; 
+        font-size: 0.75rem;
+    }
+    .men_Tshirt_button, .women_Tshirt_button{
+        padding: 0.5rem 1rem;
+    }
+    .footer{
+        display: none;
+    }
+}
