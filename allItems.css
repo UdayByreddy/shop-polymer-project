@@ -42,7 +42,7 @@ body{
     flex-direction: column;
     width: 100%;
     height: auto;
-    font-size: 1.2rem; /* Set font size for header two */
+    font-size: 0.9rem; /* Set font size for header two */
 }
 
 .shop_name {
