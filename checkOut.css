@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  position: relative;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding-bottom: 10rem;
+}
+.open-menu {
+  display: none;
+}
+
+.header_class {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20%;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.header_class1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.shop_name {
+  margin-left: 50%;
+  text-decoration: none;
+}
+.shop_name a {
+  text-decoration: none;
+  color: #202020;
+  font-weight: 700;
+}
+.cart_logo {
+  margin-left: auto;
+}
+
+.body_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+}
+.checkout_tag {
+  position: absolute;
+  left: 48%;
+  top: 0;
+  padding-bottom: 1rem;
+}
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.account_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 410px;
+  height: 643px;
+  padding-top: 2rem;
+}
+.billing_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 410px;
+  height: 643px;
+  position: relative;
+  padding-top: 2rem;
+}
+.input-group {
+  width: 90%;
+  position: relative;
+}
+.input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+.placeholder {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 1rem;
+  padding: 0px 5px;
+  color: #666;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.input:focus + .placeholder {
+  top: -10px;
+  font-size: 0.75rem;
+}
+.state_zip {
+  display: flex;
+  width: 90%;
+}
+.State {
+  margin-right: 5px;
+}
+
+.billing_address_content {
+  display: flex;
+}
+.account_information p,
+.billing_information p {
+  font-size: 0.8rem;
+  color: #202020;
+  font-weight: bold;
+}
+.billing_address_content p {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  color: #202020;
+  font-weight: lighter;
+}
+.inner_dropdown {
+  display: flex;
+  width: 33.33%;
+  column-gap: 1rem;
+}
+.order_summary_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 20%;
+  font-size: 0.8rem;
+  color: #202020;
+}
+.content1 {
+  display: flex;
+  justify-content: space-between;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+}
+.content3 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.place_order_button {
+  padding: 0.5rem 2rem;
+  color: #202020;
+  background-color: #ffffff;
+  border: 1px solid #202020;
+}
+.place_order_button:hover {
+  background-color: #202020;
+  color: #ffffff;
+}
+.shop_demo {
+  font-size: 0.75rem;
+  color: #757575;
+  position: absolute;
+  left: 43%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 0.4rem;
+}
+.footer-button {
+  border: none;
+  background-color: rgb(58, 52, 52);
+  color: #ffff;
+  padding: 0.7rem 1rem;
+}
+.input_list1,
+.input_list2,
+.input_list3 {
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  height: 30px;
+}
+.input_list4 {
+  width: 370px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+@media (max-width: 1024px) {
+  .body_container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .inner_dropdown {
+    width: 100%;
+    column-gap: 1rem;
+  }
+  .container{
+    padding-bottom: 1rem;
+  }
+  .footer{
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  .body_container {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center; /* Center align the content */
+    z-index: 1;
+    position: relative;
+  }
+  .shop_name{
+    margin-left: 40%;
+  }
+  .information {
+    flex-direction: column;
+    width: 100%;
+  }
+  .account_information {
+    width: 327px;
+    height: 674px;
+  }
+  .billing_information {
+    width: 327px;
+    height: 450px;
+    padding-bottom: 2.5rem;
+  }
+  .input_list4 {
+    width: 300px;
+  }
+  .inner_dropdown {
+    width: 100%;
+    column-gap: 0.5rem; /* Adjust spacing between dropdowns */
+  }
+
+  .place_order_button {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #172c50;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+    z-index: 999;
+  }
+  .checkout_tag {
+    padding: 0;
+    left: 40%;
+  }
+  .shop_demo {
+    left: 20%;
+  }
+  .footer {
+    display: none;
+  }
+}
