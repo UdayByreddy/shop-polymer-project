@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="checkOut.css" />
+    <link rel="icon" href="../images/shop-icon-32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header_class">
+        <div class="header_class1">
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <li class="shop_name">
+            <a href="file:///home/udaykiran/final-shop-project/index.html"
+              >SHOP</a
+            >
+          </li>
+          <li class="cart_logo">
+            <a href="file:///home/udaykiran/final-shop-project/cartPage.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </div>
+      </header>
+      <div class="body_container">
+        <p class="checkout_tag">Checkout</p>
+        <p class="shop_demo">Shop is a demo app-form data will not be sent</p>
+        <div class="information">
+          <div class="account_information">
+            <p>Account Information</p>
+            <div class="input-group">
+              <input type="text" class="input" id="input1" />
+              <label class="placeholder" for="input1">Email</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="input" id="input1" />
+              <label class="placeholder" for="input1">Phone Number</label>
+            </div>
+            <p>Shipping Address</p>
+            <div class="input-group">
+              <input type="text" class="input" id="input1" />
+              <label class="placeholder" for="input1">Address</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="input" id="input1" />
+              <label class="placeholder" for="input1">City</label>
+            </div>
+            <div class="state_zip">
+              <div class="input-group State">
+                <input type="text" class="input" id="input1" />
+                <label class="placeholder" for="input1">State</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="input" id="input1" />
+                <label class="placeholder" for="input1">Zip/PostalCode</label>
+              </div>
+            </div>
+            <div class="dropdown">
+              <p>country</p>
+              <input list="country" class="input_list4" placeholder="INDIA" />
+              <datalist id="country">
+                <option value="America"></option>
+                <option value="London"></option>
+              </datalist>
+            </div>
+            <p>Billing Address</p>
+            <div class="billing_address_content">
+              <input type="checkbox" />
+              <p>Use different billing address</p>
+            </div>
+          </div>
+          <div class="billing_information">
+            <p>Payment Method</p>
+            <div class="input-group">
+              <input type="text" class="input" id="input1" />
+              <label class="placeholder" for="input1">Cardholder Name</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="input" id="input1" />
+              <label class="placeholder" for="input1">Card Number</label>
+            </div>
+            <div class="dropdown">
+              <p>Exipry</p>
+              <div class="inner_dropdown">
+                <input
+                  list="expiry-years"
+                  class="input_list1"
+                  placeholder="Year"
+                />
+                <datalist id="expiry-years">
+                  <option value="2024"></option>
+                  <option value="2025"></option>
+                  <option value="2026"></option>
+                  <option value="2027"></option>
+                </datalist>
+                <input
+                  list="expiry-months"
+                  class="input_list2"
+                  placeholder="Month"
+                />
+                <datalist id="expiry-months">
+                  <option value="01"></option>
+                  <option value="02"></option>
+                  <option value="03"></option>
+                  <option value="04"></option>
+                  <option value="05"></option>
+                  <option value="06"></option>
+                  <option value="07"></option>
+                  <option value="08"></option>
+                  <option value="09"></option>
+                  <option value="10"></option>
+                  <option value="11"></option>
+                  <option value="12"></option>
+                </datalist>
+                <input type="text" class="input_list3" placeholder="CVV" />
+              </div>
+            </div>
+            <p>Order summary</p>
+            <div class="order_summary_content">
+              <div class="content1">
+                <span>Ladies Google New York T-Shirt</span>
+                <span> $18.35</span>
+              </div>
+              <div class="content2">
+                <span>Men's Tech Shell Full-Zip</span>
+                <span> $50.20</span>
+              </div>
+              <div class="content3">
+                <span>Total</span>
+                <span> $68.55</span>
+              </div>
+            </div>
+            <button
+              onclick="window.location.href='file:///home/udaykiran/final-shop-project/thankYouPage.html'"
+              class="place_order_button"
+            >
+              PLACE ORDER
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Made by UdayKiran Byreddy</p>
+      <button class="footer-button">DEMO ONLY</button>
+    </footer>
+  </body>
+</html>
