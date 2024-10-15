@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_class {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    padding: 20px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.header_class1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    font-size: 1.2rem; 
+    padding-bottom: 3rem;
+}
+
+.header_class2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem; /* Set font size for header two */
+}
+
+.shop_name {
+  margin-left: 50%;
+  text-decoration: none;
+}
+.shop_name a {
+    text-decoration: none; 
+    color: #202020;
+    font-weight: 700;
+}
+.cart_logo {
+  margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding-left: 2.5rem;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #202020;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #202020;
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.open-menu, .close-menu {
+    position: absolute;
+    color: #202020;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.open-menu {
+    left: 10px;
+}
+
+.close-menu {
+    top: 20px;
+    left: 20px;
+}
+
+#check {
+    display: none;
+}
+
+.body_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    row-gap: 2rem;
+    overflow-y: auto;
+}
+
+.men_outwear {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mens_outwear_image {
+    width: 80%;
+    height: 300px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mens_outerwear.jpg');
+}
+
+.men_outwear_content {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.mens_outwear_heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+}
+
+.mens_outwear_button {
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+}
+
+.container2 {
+    display: grid;
+     justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    width: 100vw;
+    row-gap: 1.5rem;
+    padding-bottom: 4rem;
+    
+}
+#outwear1_id{
+    display: block;
+    text-decoration: none;
+    color: #202020;
+    
+}
+
+.outwear1,.outwear2,.outwear3,.outwear4,.outwear5,.outwear6,.outwear7,.outwear8,.outwear9,.outwear10,.outwear11,.outwear12{
+    width: 287px;
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    
+}
+
+
+.outerwear1_img,.outerwear2_img,.outerwear3_img,.outerwear4_img,.outerwear5_img,.outerwear6_img,.outerwear7_img,.outerwear8_img,.outerwear9_img,.outerwear10_img,.outerwear11_img,.outerwear12_img{
+    width: 100%;
+    height: 300px;
+   object-fit: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.outerwear1_img{
+    background-image: url('./outwear_image/10-15068B.jpg');
+}
+
+.outerwear2_img{
+    background-image: url('./outwear_image/10-14154B.jpg');
+}
+.outerwear3_img{
+    background-image: url('./outwear_image/10-14157B.jpg');
+}
+.outerwear4_img{
+    background-image: url('./outwear_image/10-15041B.jpg');
+}
+.outerwear5_img{
+  background-image: url('./outwear_image/10-14133B.jpg');
+}
+.outerwear6_img{
+    background-image: url('./outwear_image/10-14160B.jpg');
+}
+.outerwear7_img{
+    background-image: url('./outwear_image/image7.jpg');
+}
+.outerwear8_img{
+    background-image: url('./outwear_image/image8.jpg');
+}
+.outerwear9_img{
+    background-image: url('./outwear_image/image9.jpg');
+}
+.outerwear10_img{
+    background-image: url('./outwear_image/image10.jpg');
+}
+.outerwear11_img{
+    background-image: url('./outwear_image/image11.jpg');
+}
+.outerwear12_img{
+    background-image: url('./outwear_image/image12.jpg');
+}
+
+.outwear1_dep,.outwear2_dep,.outwear3_dep,.outwear4_dep,.outwear5_dep,.outwear6_dep,.outwear7_dep,.outwear8_dep,.outwear9_dep,.outwear10_dep,.outwear11_dep,.outwear12_dep{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.outwear1_price,.outwear2_price,.outwear3_price,.outwear4_price,.outwear5_price,.outwear6_price,.outwear7_price,.outwear8_price,.outwear9_price,.outwear10_price,.outwear11_price ,.outwear12_price{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 0.75rem;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 0.4rem;
+  }
+  .footer-button {
+    border: none;
+    background-color: rgb(58, 52, 52);
+    color: #ffff;
+    padding: 0.7rem 1rem;
+  }
+@media (max-width:1024px) {
+    .container{
+        width: 100vw;
+    }
+    .mens_outwear_image{
+        width: 100%;
+        height: 300px;
+    }
+    .outerwear1_img, .outerwear2_img, .outerwear3_img, .outerwear4_img, .outerwear5_img, .outerwear6_img, .outerwear7_img, .outerwear8_img, .outerwear9_img, .outerwear10_img, .outerwear11_img, .outerwear12_img {
+       background-size: cover;
+        height: 230px;
+    }
+
+.outwear1,.outwear2,.outwear3,.outwear4,.outwear5,.outwear6,.outwear7,.outwear8,.outwear9,.outwear10,.outwear11,.outwear12{
+    height: 317px;
+    width: 230px;
+}
+
+    
+}
+
+/* Responsive Menu for Mobile */
+@media (max-width: 610px) {
+    .container{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    /* Menu styles */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        background-color: #ffffff;
+        color: #202020;
+        transition: all 0.2s ease-in-out;
+    }
+    .shop_name{
+        margin-left: 40%;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        color: #202020;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    /* Body Container adjustments */
+    .body_container {
+        flex-direction: column;
+    }
+    .mens_outwear_image {
+        width: 100%;
+        height: 200px;
+    }
+    .men_outwear_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Container2 Grid adjustments */
+    .container2 {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 0.5rem;
+    }
+    .outwear1, .outwear2, .outwear3, .outwear4, .outwear5, .outwear6, .outwear7, .outwear8, .outwear9, .outwear10, .outwear11, .outwear12 {
+        width: 80%;
+    }
+    .outerwear1_img, .outerwear2_img, .outerwear3_img, .outerwear4_img, .outerwear5_img, .outerwear6_img, .outerwear7_img, .outerwear8_img, .outerwear9_img, .outerwear10_img, .outerwear11_img, .outerwear12_img {
+        background-size: cover;
+        height: 150px;
+    }
+    .outwear1_dep,.outwear2_dep,.outwear3_dep,.outwear4_dep,.outwear5_dep,.outwear6_dep,.outwear7_dep,.outwear8_dep,.outwear9_dep,.outwear10_dep,.outwear11_dep,.outwear12_dep{
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .footer{
+        display: none;
+    }
+} 
